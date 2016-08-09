@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="finder.phone.blackhunter.faizulhauqe.phonefinder">
+
+    <uses-permission android:name="android.permission.RECEIVE_SMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" >
+    </uses-permission>
+
+    <supports-screens
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:normalScreens="true"
+        android:anyDensity="true"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="finder.phone.blackhunter.faizulhauqe.phonefinder.MainActivity"
+            android:label="@string/app_name">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="finder.phone.blackhunter.faizulhauqe.phonefinder.IncomingSms" >
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="finder.phone.blackhunter.faizulhauqe.phonefinder.StopTone"
+            android:label="@string/title_activity_stop_tone"
+            android:theme="@style/Theme.AppCompat.Dialog"
+            android:icon="@drawable/app_icon"
+            >
+
+        </activity>
+        <activity
+            android:name="finder.phone.blackhunter.faizulhauqe.phonefinder.SecurityCode"
+            android:label="@string/title_activity_security_code">
+        </activity>
+        <activity
+            android:name="finder.phone.blackhunter.faizulhauqe.phonefinder.AboutApp"
+            android:label="@string/title_activity_about_app">
+        </activity>
+
+    </application>
+
+</manifest>

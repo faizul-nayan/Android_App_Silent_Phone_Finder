@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo"
+        android:layout_weight="0.37"/>
+
+    <EditText
+        android:id="@+id/securityCodeEditText"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:ems="10"
+        android:hint="  Enter Your Security Code"
+        android:textColorHint="#FFFFFF"
+        android:textColor="#15F21A"
+        android:background="#1b1a1a"
+        android:textSize="22sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Save  "
+            android:textColor="#FFFFFF"
+            android:background="#1b1a1a"
+            android:drawableLeft="@drawable/ic_action_save"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/homeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Home  "
+            android:background="#1b1a1a"
+            android:textColor="#FFFFFF"
+            android:drawableLeft="@drawable/home_con_white"
+            android:layout_marginLeft="15dp"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

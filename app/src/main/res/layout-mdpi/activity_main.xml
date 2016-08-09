@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:src="@drawable/logo"
+        android:layout_weight=".6" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:text="Now Your Service is:"
+            android:textColor="#FFFFFF"
+            android:textSize="45sp"
+            android:textStyle="italic|bold" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="46dp"/>
+
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/valueTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_toLeftOf="@+id/switch1"
+        android:textColor="#15F21A"
+        android:textSize="50sp"
+        android:textStyle="bold|italic" />
+    
+    <Button
+        android:id="@+id/codeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/valueTV"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:text=" Set Security Code  "
+        android:textColor="#FFFFFF"
+        android:background="#1b1a1a"
+        android:textSize="35sp"
+        android:drawableLeft="@drawable/ic_action_new_label" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="15dp"
+        android:text="This app help you to find your device when it&apos;s rigning mode is silent. Just send a text message to your device with your SECURITY CODE in message body.After that it will make changed your device ringer mode to normal and play tone.For more details see about option from menu option."
+        android:textAlignment="gravity"
+        android:textColor="#A69A9A"
+        android:textSize="30sp" />
+
+</LinearLayout>

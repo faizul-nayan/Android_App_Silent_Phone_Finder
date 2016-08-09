@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    tools:context=".StopTone"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/logo"
+        android:layout_weight="0.35"/>
+
+     <Button
+         android:id="@+id/stopTone"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="40dp"
+         android:layout_marginBottom="40dp"
+         android:drawableLeft="@drawable/ic_action_stop"
+         android:text="Stop Now   "
+         android:background="#1b1a1a"
+         android:textColor="#FFFFFF"
+         android:textSize="20sp"
+         android:layout_gravity="center"/>
+
+</LinearLayout>
